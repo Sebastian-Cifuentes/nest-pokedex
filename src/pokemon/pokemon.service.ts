@@ -43,6 +43,7 @@ export class PokemonService {
               .sort({no: 1})
               .select('-__v');
     } catch (err) {
+      console.log(err)
       throw new Error('This is other error - check logs');
     }
   }
